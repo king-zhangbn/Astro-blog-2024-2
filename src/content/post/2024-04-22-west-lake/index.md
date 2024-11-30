@@ -1,0 +1,70 @@
+---
+title: "West Lake"
+publishDate: 2024-04-22 12:53:51 
+description: 此篇文章迁移自前WordPress文章，无description
+tags:
+  - 闲言碎语
+language: 中文
+---
+
+> Shot with redmi k60ultra
+> 
+> 西湖音乐喷泉 周边摄影
+
+![2024244221713790122696.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713790122696.jpg)
+
+![2024244221713790121972.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713790121972.jpg)
+
+![2024244221713789104267.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789104267.jpg)
+
+![2024244221713789103424.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789103424.jpg)
+
+![2024244221713789102695.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789102695.jpg)
+
+![2024244221713789102175.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789102175.jpg)
+
+![2024244221713789110290.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789110290.jpg)
+
+![2024244221713789109914.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789109914.jpg)
+
+![2024244221713789109581.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789109581.jpg)
+
+![2024244221713789109217.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789109217.jpg)
+
+![2024244221713789108885.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789108885.jpg)
+
+![2024244221713789108539.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789108539.jpg)
+
+![2024244221713789108204.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789108204.jpg)
+
+![2024244221713789107500.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789107500.jpg)
+
+![2024244221713789107000.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789107000.jpg)
+
+![2024244221713789106449.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789106449.jpg)
+
+![2024244221713789106079.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789106079.jpg)
+
+![2024244221713789105193.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789105193.jpg)
+
+![2024244221713789109914.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789109914.jpg)
+
+![2024244221713789109581.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789109581.jpg)
+
+![2024244221713789109217.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789109217.jpg)
+
+![2024244221713789108885.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789108885.jpg)
+
+![2024244221713789108539.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789108539.jpg)
+
+![2024244221713789108204.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789108204.jpg)
+
+![2024244221713789107500.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789107500.jpg)
+
+![2024244221713789107000.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789107000.jpg)
+
+![2024244221713789106449.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789106449.jpg)
+
+![2024244221713789106079.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789106079.jpg)
+
+![2024244221713789105193.jpg](https://cpic2024.qiu.icu/uploads/piclist/2024244221713789105193.jpg)
