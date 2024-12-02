@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
   // HTML lang property, found in src/layouts/Base.astro L:18
   lang: 'zh-CN, en-US',
   // Meta property, found in src/components/BaseHead.astro L:42
-  ogLocale: 'en_US',
+  ogLocale: 'zh-CN',
   // Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
   date: {
     locale: 'en-US',

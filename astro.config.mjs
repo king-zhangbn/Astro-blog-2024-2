@@ -34,6 +34,10 @@ import {
   updateStyle,
   transformerNotationDiff
 } from './src/plugins/shikiTransformers.ts'
+import keystatic from '@keystatic/astro'
+import react from '@astrojs/react'
+import markdoc from '@astrojs/markdoc'
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -59,6 +63,9 @@ export default defineConfig({
   },
 
   integrations: [
+    keystatic(),
+    markdoc(),
+    react(),
     tailwind({ applyBaseStyles: false }),
     sitemap(),
     mdx(),
