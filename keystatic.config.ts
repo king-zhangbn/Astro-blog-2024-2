@@ -9,13 +9,12 @@ export default config({
     project: 'astro-blog-2024/astro-blog-2024',
   },
   ui: {
-    brand: { 
-      name: 'XingLuo\' Dash Board' ,
+    brand: {
+      name: 'XingLuo\' Dash Board',
     },
     navigation: {
-        '总体类别': ['posts_all', 'posts_other'],
-        '细分类别': ['posts_suibirji', 'posts_other'],
-      },
+      '类别': ['posts_all', 'posts_other'],
+    },
 
   },
   collections: {
@@ -26,7 +25,7 @@ export default config({
       path: 'src/content/post/*/',
       format: { contentField: 'content' },
       schema: {
-        title: fields.slug({ 
+        title: fields.slug({
           name: { label: '标题' },
           slug: {
             label: '对 SEO 友好的 slug',
@@ -41,13 +40,20 @@ export default config({
           label: '发布时间',
           description: 'The publishDate of the event'
         }),
-        tags: fields.array(
-          fields.text({ label: '类目' }),
-          {
-            label: '标签',
-            itemLabel: props => props.value,
-          }
-        ),
+        tags: fields.multiselect({
+          label: '分类',
+          options: [
+            { label: '随笔日记', value: '随笔日记' },
+            { label: '折腾分享', value: '折腾分享' },
+            { label: '闲言碎语', value: '闲言碎语' },
+            { label: '游玩嬉戏', value: '游玩嬉戏' },
+            { label: '学点东西', value: '学点东西' },
+            { label: '壁纸分享', value: '壁纸分享' },
+            { label: '转载文章', value: '转载文章' },
+          ],
+          defaultValue: ['随笔日记', '折腾分享'],
+        }),
+
         coverImage: fields.object({
           src: fields.text({ label: '头图' }),
           color: fields.text({ label: '主题颜色 #xxxxxx 可以在该网站查询https://www.codeeeee.com/color/picker.html' })
@@ -63,18 +69,13 @@ export default config({
           extension: 'md',
           options: {
             image: {
-              directory: 'src/content/postimg',
-
-              // Use the @assets path alias
-              publicPath: 'src/content/postimg/'
-
+              directory: 'src/content/post/',
+              publicPath: 'src/content/post/'
             }
           }
         })
       },
     }),
-
-
 
 
     posts_all: collection({
@@ -84,7 +85,7 @@ export default config({
       path: 'src/content/post/*',
       format: { contentField: 'content' },
       schema: {
-        title: fields.slug({ 
+        title: fields.slug({
           name: { label: '标题' },
           slug: {
             label: '对 SEO 友好的 slug',
@@ -99,102 +100,46 @@ export default config({
           label: '发布时间',
           description: 'The publishDate of the event'
         }),
-        tags: fields.array(
-          fields.text({ label: '类目' }),
-          {
-            label: '标签',
-            itemLabel: props => props.value,
-          }
-        ),
+        tags: fields.multiselect({
+          label: '分类',
+          options: [
+            { label: '随笔日记', value: '随笔日记' },
+            { label: '折腾分享', value: '折腾分享' },
+            { label: '闲言碎语', value: '闲言碎语' },
+            { label: '游玩嬉戏', value: '游玩嬉戏' },
+            { label: '学点东西', value: '学点东西' },
+            { label: '壁纸分享', value: '壁纸分享' },
+            { label: '转载文章', value: '转载文章' },
+          ],
+          defaultValue: ['随笔日记', '折腾分享'],
+        }),
+
+        coverImage: fields.object({
+          src: fields.text({ label: '头图' }),
+          color: fields.text({ label: '主题颜色 #xxxxxx 可以在该网站查询https://www.codeeeee.com/color/picker.html' })
+          //   color: fields.text({ label: 'Image Color' }),
+        }),
+        draft: fields.checkbox({
+          label: 'Draft',
+          description: 'Set this post as draft to prevent it from being published'
+        }),
+
         language: fields.text({
-          label: 'Languages',
+          label: '语言',
           description: 'languages',
         }),
-        
         content: fields.markdoc({
           label: 'Content',
           extension: 'md',
           options: {
             image: {
-              directory: 'src/content/postimg',
-
-              // Use the @assets path alias
-              publicPath: 'src/content/postimg/'
-
+              directory: 'src/content/post/*',
+              publicPath: 'src/content/post/*'
             }
-          },
+          }
         })
       },
     }),
-
-
-
-    posts_suibirji: collection({
-        label: '随笔日记',
-        slugField: 'title',
-        entryLayout: "content",
-        path: 'src/content/post/*/',
-        format: { contentField: 'content' },
-        schema: {
-          title: fields.slug({ 
-            name: { label: '标题' },
-            slug: {
-              label: '对 SEO 友好的 slug',
-              description: '这将定义此条目的文件/文件夹名称'
-            }
-          }),
-          description: fields.text({
-            label: '描述',
-            description: '15个字以上',
-          }),
-          publishDate: fields.date({
-            label: '发布时间',
-            description: 'The publishDate of the event'
-          }),
-
-
-          tags: fields.multiselect({
-            label: 'Interests',
-            options: [
-              { label: '随笔日记', value: '随笔日记' },
-              { label: 'Basketball', value: 'basketball' },
-              { label: 'Music', value: 'music' },
-              { label: 'Chess', value: 'chess' },
-            ],
-            defaultValue: ['随笔日记', 'basketball', 'music'],
-          }),
-
-          coverImage: fields.object({
-            src: fields.text({ label: '头图' }),
-            color: fields.text({ label: '主题颜色 #xxxxxx 可以在该网站查询https://www.codeeeee.com/color/picker.html' })
-            //   color: fields.text({ label: 'Image Color' }),
-          }),
-
-
-
-
-
-          draft: fields.checkbox({
-            label: 'Draft',
-            description: 'Set this post as draft to prevent it from being published'
-          }),
-
-  
-          content: fields.markdoc({
-            label: 'Content',
-            extension: 'md',
-            options: {
-              image: {
-                directory: 'src/content/postimg',
-  
-                // Use the @assets path alias
-                publicPath: 'src/content/postimg/'
-  
-              }
-            }
-          })
-        },
-      }),
 
 
 
