@@ -1,10 +1,10 @@
 // @ts-check
 
 import { defineConfig } from 'astro/config'
-
+import cloudflare from '@astrojs/cloudflare';
 // Adapter
 // 1. Vercel (serverless)
-import vercelServerless from '@astrojs/vercel/serverless'
+// import vercelServerless from '@astrojs/vercel/serverless'
 // 2. Vercel (static)
 // import vercelStatic from '@astrojs/vercel/static';
 // 3. Local (standalone)
@@ -49,7 +49,7 @@ export default defineConfig({
 
   // Adapter
   // 1. Vercel (serverless)
-  adapter: vercelServerless(),
+  adapter: cloudflare(),
   // 2. Vercel (static)
   // adapter: vercelStatic(),
   // 3. Local (standalone)
