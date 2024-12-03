@@ -50,19 +50,7 @@ import keystatic from '@keystatic/astro'/* [!code ++] */
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), markdoc()],/* [!code --] */
-  integrations: [
-    keystatic(),/* [!code ++] */
-    markdoc(),/* [!code ++] */
-    react(),/* [!code ++] */
-    tailwind({ applyBaseStyles: false }),
-    sitemap(),
-    mdx(),
-    icon(),
-    (await import('@playform/compress')).default({
-      SVG: false,
-      Exclude: ['index.*.js']
-    })
-  ],
+  integrations: [react(), markdoc(), keystatic()],/* [!code ++] */
   output: 'hybrid',/* [!code ++] */
 })
 ```
