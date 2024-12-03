@@ -6,7 +6,7 @@ export default config({
     kind: 'cloud',
   },
   cloud: {
-    project: 'astro-blog-2024/astro-blog-2024',
+    project: 'astro-blog-2024/astro-blog-2024-2',
   },
   ui: {
     brand: {
