@@ -100,6 +100,11 @@ export default config({
           label: '发布时间',
           description: 'The publishDate of the event'
         }),
+        coverImage: fields.object({
+          src: fields.text({ label: '头图' }),
+          color: fields.text({ label: '主题颜色 #xxxxxx 可以在该网站查询https://www.codeeeee.com/color/picker.html' })
+          //   color: fields.text({ label: 'Image Color' }),
+        }),
         tags: fields.multiselect({
           label: '分类',
           options: [
@@ -111,33 +116,27 @@ export default config({
             { label: '壁纸分享', value: '壁纸分享' },
             { label: '转载文章', value: '转载文章' },
           ],
-          defaultValue: ['随笔日记', '折腾分享'],
+          defaultValue: ['随笔日记'],
         }),
-
-        coverImage: fields.object({
-          src: fields.text({ label: '头图' }),
-          color: fields.text({ label: '主题颜色 #xxxxxx 可以在该网站查询https://www.codeeeee.com/color/picker.html' })
-          //   color: fields.text({ label: 'Image Color' }),
-        }),
-        draft: fields.checkbox({
-          label: 'Draft',
-          description: 'Set this post as draft to prevent it from being published'
-        }),
-
         language: fields.text({
           label: '语言',
-          description: 'languages',
+          description: '这里懒得敲，就就别写了',
         }),
         content: fields.markdoc({
           label: 'Content',
           extension: 'md',
           options: {
             image: {
-              directory: 'src/content/post/*',
-              publicPath: 'src/content/post/*'
+              directory: 'src/content/post/',
+              publicPath: 'src/content/post/'
             }
           }
-        })
+        }),
+
+        draft: fields.checkbox({
+          label: '是否草稿',
+          description: '这他妈的是草稿吗？'
+        }),
       },
     }),
 
