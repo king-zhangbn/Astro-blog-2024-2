@@ -13,9 +13,7 @@ const {
   content: { slug, data, render }
 } = Astro.props
 
-const { remarkPluginFrontmatter } = (await render()) as {
-  remarkPluginFrontmatter: Record<string, any>;
-};
+const { remarkPluginFrontmatter } = await render()
 
 const dateTimeOptions: Intl.DateTimeFormatOptions = {
   month: 'short'
