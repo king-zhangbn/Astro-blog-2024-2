@@ -19,10 +19,10 @@ language: '中文'
 
 ## 官方教程
 
-<https://keystatic.com/docs/installation-astro>
+https://keystatic.com/docs/installation-astro
+
 
 ## 安装依赖
-
 ### bun
 
 `bun install @astrojs/react @astrojs/markdoc`
@@ -39,29 +39,26 @@ language: '中文'
 
 修改astro配置文件，名称为astro.config.mjs或者astro.config.ts
 
-```ts title="astro.config.mjs"
+```
 // astro.config.mjs
 import { defineConfig } from 'astro/config'
 
 import react from '@astrojs/react'
 import markdoc from '@astrojs/markdoc'
-import keystatic from '@keystatic/astro'/* [!code ++] */
++  import keystatic from '@keystatic/astro'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), markdoc()],/* [!code --] */
-  integrations: [react(), markdoc(), keystatic()],/* [!code ++] */
-  output: 'hybrid',/* [!code ++] */
+-   integrations: [react(), markdoc()],
++   integrations: [react(), markdoc(), keystatic()],
++   output: 'hybrid',
 })
 ```
-
 别直接复制，-代表删除，+代表添加
 
 ## 添加文件
-
 创建keystatic.config.ts
-
-```ts title="keystatic.config.ts"
+```
 // keystatic.config.ts
 import { config, fields, collection } from '@keystatic/core';
 
@@ -196,7 +193,6 @@ export default config({
   },
 });
 ```
-
 本配置适用于
 
 [theme-astro-pure](https://github.com/cworld1/theme-astro-pure)

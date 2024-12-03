@@ -3,13 +3,13 @@ import type { CardListData, FooterConfig, IntegrationConfig, MenuLinks, SiteConf
 export const siteConfig: SiteConfig = {
   // === Required meta properties ===
   // Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-  author: 'CWorld / Arthals',
+  author: 'Xingluo',
   // Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
-  title: 'Astro Theme Pure',
+  title: 'Xingluo\'s Blog',
   // Meta property used to generate your sitemap and canonical URLs in your final build
-  site: 'https://astro-theme-pure.vercel.app',
+  site: 'https://blog.en.icu',
   // Meta property used as the default description meta property
-  description: 'Stay hungry, stay foolish',
+  description: '何处秋风悲画扇',
   // HTML lang property, found in src/layouts/Base.astro L:18
   lang: 'zh-CN, en-US',
   // Meta property, found in src/components/BaseHead.astro L:42
@@ -40,10 +40,10 @@ export const siteConfig: SiteConfig = {
   links: {
     // Link info
     applyTip: {
-      name: 'Astro Theme Pure',
-      desc: '求知若愚，虚怀若谷',
-      url: 'https://astro-theme-pure.vercel.app/',
-      avatar: 'https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200'
+      name: 'Xingluo\'s Blog',
+      desc: '内心丰盈者独行也如众',
+      url: 'https://blog.en.icu/',
+      avatar: 'https://pic.en.icu/Xingluo.webp'
     }
   },
 
@@ -64,8 +64,8 @@ export const siteConfig: SiteConfig = {
 export const footerConfig: FooterConfig = {
   // Registration information for ICP (optional)
   registration: {
-    url: 'https://icp.gov.moe/?keyword=APTX4869',
-    text: '萌ICP备APTX4869号'
+    url: 'https://bing.com',
+    text: '备个毛'
   },
   socialLinks: [
     // {
@@ -82,7 +82,7 @@ export const footerConfig: FooterConfig = {
 export const integrationConfig: IntegrationConfig = {
   waline: {
     // Comment system service link (no link to disable)
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
+    server: 'https://waline.xzi.cc',
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
@@ -108,6 +108,10 @@ export const menuLinks: MenuLinks = [
   {
     link: '/docs/list',
     label: 'Docs'
+  },
+  {
+    link: '/blog/shuoshuo',
+    label: 'Talks'
   },
   {
     link: '/projects',
