@@ -150,10 +150,10 @@ img, video {
     background-color: transparent;
     transition: background-color 0.3s ease, border-radius 0.3s ease; /* 添加 border-radius 的过渡 */
 }
-
-.bb-item:hover {
+/* 放大效果 */
+/* .bb-item:hover {
     transform: scale(1.02);
-}
+} */
 
 .bb-item {
   padding: 20px;
