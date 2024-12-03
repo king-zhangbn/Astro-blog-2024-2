@@ -3,7 +3,7 @@ title: 记录一次py的代码片段
 description: 文件名称的更替方案，由Python 实现效果
 publishDate: 2024-11-29
 tags:
-  - "折腾分享\x01"
+  - "折腾分享"
 language: CH
 ---
 # 记录一次 py 的代码片段
